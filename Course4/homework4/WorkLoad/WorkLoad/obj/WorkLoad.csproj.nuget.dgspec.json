@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj": {}
+    "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj": {}
   },
   "projects": {
-    "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj": {
+    "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj",
+        "projectUniqueName": "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj",
         "projectName": "WorkLoad",
-        "projectPath": "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj",
+        "projectPath": "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj",
         "packagesPath": "C:\\Users\\Madalina\\.nuget\\packages\\",
-        "outputPath": "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\obj\\",
+        "outputPath": "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Madalina\\AppData\\Roaming\\NuGet\\NuGet.Config",
