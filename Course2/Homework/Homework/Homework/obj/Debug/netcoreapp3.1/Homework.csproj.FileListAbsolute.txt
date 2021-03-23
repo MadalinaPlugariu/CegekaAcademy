@@ -1,0 +1,13 @@
+D:\cegeka\course2\homework\Homework\Homework\obj\Debug\netcoreapp3.1\Homework.csprojAssemblyReference.cache
+D:\cegeka\course2\homework\Homework\Homework\obj\Debug\netcoreapp3.1\Homework.AssemblyInfoInputs.cache
+D:\cegeka\course2\homework\Homework\Homework\obj\Debug\netcoreapp3.1\Homework.AssemblyInfo.cs
+D:\cegeka\course2\homework\Homework\Homework\obj\Debug\netcoreapp3.1\Homework.csproj.CoreCompileInputs.cache
+D:\cegeka\course2\homework\Homework\Homework\bin\Debug\netcoreapp3.1\Homework.exe
+D:\cegeka\course2\homework\Homework\Homework\bin\Debug\netcoreapp3.1\Homework.deps.json
+D:\cegeka\course2\homework\Homework\Homework\bin\Debug\netcoreapp3.1\Homework.runtimeconfig.json
+D:\cegeka\course2\homework\Homework\Homework\bin\Debug\netcoreapp3.1\Homework.runtimeconfig.dev.json
+D:\cegeka\course2\homework\Homework\Homework\bin\Debug\netcoreapp3.1\Homework.dll
+D:\cegeka\course2\homework\Homework\Homework\bin\Debug\netcoreapp3.1\Homework.pdb
+D:\cegeka\course2\homework\Homework\Homework\obj\Debug\netcoreapp3.1\Homework.dll
+D:\cegeka\course2\homework\Homework\Homework\obj\Debug\netcoreapp3.1\Homework.pdb
+D:\cegeka\course2\homework\Homework\Homework\obj\Debug\netcoreapp3.1\Homework.genruntimeconfig.cache
