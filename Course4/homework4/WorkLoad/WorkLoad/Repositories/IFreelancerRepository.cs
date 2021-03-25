@@ -10,5 +10,6 @@ namespace WorkLoad.Repositories
     {
         public List<Freelancer> GetFreelancers();
         public void AddFreelancer(Freelancer freelancer);
+        public void AddWorkload(int freelancerId, DateTime dateTime, double hours);
     }
 }

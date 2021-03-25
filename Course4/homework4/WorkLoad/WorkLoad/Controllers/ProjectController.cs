@@ -1,15 +1,16 @@
-﻿/*using Microsoft.AspNetCore.Components;*/
-using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using WorkLoad.Entities;
 using WorkLoad.Repositories;
 
 namespace WorkLoad.Controllers
 {
-    [Route("api/[controller]")]
+    [System.Web.Http.Route("api/[controller]")]
     [ApiController]
     public class ProjectController : ControllerBase
     {
@@ -19,14 +20,26 @@ namespace WorkLoad.Controllers
             _projectRepository = projectRepository;
         }
         [HttpGet("displayProjects")]
-        public async Task<IActionResult> DisplayProjects()
+        public IActionResult DisplayProjects()
         {
             var projects = _projectRepository.GetProjects();
             return Ok(projects);
         }
 
+        [HttpGet("checkLoad")]
+        public IActionResult CheckLoad(int idProject)
+        {
+            var check = _projectRepository.CheckLoad(idProject);
+            if (check == true)
+                return Ok();
+            else
+            {
+                throw new System.Web.Http.HttpResponseException(HttpStatusCode.NotFound);
+            }
+        }
+
         [HttpPost("addProject")]
-        public async Task<IActionResult> AddProject(Project project)
+        public IActionResult AddProject(Project project)
         {
             _projectRepository.AddProject(project);
             return Ok();

@@ -31,7 +31,14 @@ namespace WorkLoad
             services.AddControllers();
             services.AddScoped<IFreelancerRepository, FreelancerRepository>();
             services.AddScoped<IProjectRepository, ProjectRepository>();
+            services.AddScoped<IWorkdayRepository, WorkdayRepository>();
             services.AddDbContext<WorkLoadDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My API", Version = "v1" });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +48,13 @@ namespace WorkLoad
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
 
             app.UseHttpsRedirection();
 

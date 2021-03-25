@@ -10,5 +10,6 @@ namespace WorkLoad.Repositories
     {
         public List<Project> GetProjects();
         public void AddProject(Project project);
+        public bool CheckLoad(int idProject);
     }
 }

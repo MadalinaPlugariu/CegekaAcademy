@@ -17,14 +17,14 @@ namespace WorkLoad.Controllers
         }
 
         [HttpGet("displayWorkdays")]
-        public async Task<IActionResult> DisplayWorkdays()
+        public IActionResult DisplayWorkdays()
         {
             var workday = _workdayRepository.GetWorkdays();
             return Ok(workday);
         }
 
         [HttpPost("addWorkday")]
-        public async Task<IActionResult> AddWorkday(Workday workday)
+        public IActionResult AddWorkday(Workday workday)
         {
             _workdayRepository.AddWorkday(workday);
             return Ok();

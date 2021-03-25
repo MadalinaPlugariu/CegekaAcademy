@@ -20,17 +20,25 @@ namespace WorkLoad.Controllers
 
 
         [HttpGet("displayFreelancers")]
-        public async Task<IActionResult> DisplayFreelancers()
+        public IActionResult DisplayFreelancers()
         {
            var freelancers = _freelancerRepository.GetFreelancers();
             return Ok(freelancers);
         }
 
         [HttpPost("addFreelancer")]
-        public async Task<IActionResult> AddFreelancer(Freelancer freelancer)
+        public IActionResult AddFreelancer(Freelancer freelancer)
         {
             _freelancerRepository.AddFreelancer(freelancer);
             return Ok();
         }
+
+        [HttpPost("addWorkload")]
+        public IActionResult AddWorkload(int freelancerId, DateTime dateTime, double hours)
+        {
+            _freelancerRepository.AddWorkload(freelancerId, dateTime, hours);
+            return Ok();
+        }
+
     }
 }

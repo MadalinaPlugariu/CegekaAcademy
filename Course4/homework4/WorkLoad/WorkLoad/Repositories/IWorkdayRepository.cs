@@ -10,6 +10,5 @@ namespace WorkLoad.Repositories
     {
         public List<Workday> GetWorkdays();
         public void AddWorkday(Workday workday);
-        public void AddWorload(Workday workday);
     }
 }

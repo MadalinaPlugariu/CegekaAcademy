@@ -8,31 +8,23 @@ namespace WorkLoad.Entities
     public class Freelancer
     {
         public int Id{ get; set; }
-        public string FreelancerInfo { get; set; }
+        public string FreelancerInfo { get; set; } //fname, lname
         public double Price { get; set; }
-        public string Address { get; set; }
-        public float Zipcode { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string County { get; set; }
+        public  AddressFreelancer AddressFreelancer { get; set; }
         public virtual ICollection<Project> Projects { get; set; }
         public virtual ICollection<Workday> Workdays { get; set; }
 
+        //new table adress 
         public Freelancer()
         {
             this.Projects = new HashSet<Project>();
             this.Workdays = new HashSet<Workday>();
         }
-        public Freelancer(string freelancerInfo, double price, string address, float zipcode, string city, string state, string county)
+        public Freelancer(string freelancerInfo, double price)
         {
 
             FreelancerInfo = freelancerInfo;
             Price = price;
-            Address = address;
-            Zipcode = zipcode;
-            City = city;
-            State = state;
-            County = county;
         }
     }
 }

@@ -7,9 +7,11 @@ using WorkLoad.Entities;
 
 namespace WorkLoad.Repositories
 {
+   
     public class WorkdayRepository:IWorkdayRepository
     {
         private readonly WorkLoadDbContext _context;
+
         public WorkdayRepository(WorkLoadDbContext context)
         {
             _context = context;
@@ -25,12 +27,6 @@ namespace WorkLoad.Repositories
             _context.Workday.Add(workday);
             _context.SaveChanges();
         }
-        public void AddWorkload(Workday workday)
-        {
-            if(workday.Hours <= 8){
-                _context.Workday.Add(workday);
-                _context.SaveChanges();
-            }
-        }
+        //create new workday with values
     }
 }

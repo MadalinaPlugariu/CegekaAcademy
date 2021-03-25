@@ -25,5 +25,23 @@ namespace WorkLoad.Repositories
             _context.Freelancer.Add(freelancer);
             _context.SaveChanges();
         }
+        public void AddWorkload (int freelancerId, DateTime dateTime, double hours)
+        {
+            if (hours <= 8) {
+                Workday workday = new Workday()
+                {
+                    Hours = hours,
+                    Workdays = dateTime,
+                    IdFreelancer = freelancerId
+                };
+                _context.Workday.Add(workday);
+                _context.SaveChanges();
+
+            }
+            else
+            {
+                Console.WriteLine("Give a smaller number for hours.");
+            }
+        }
     }
 }

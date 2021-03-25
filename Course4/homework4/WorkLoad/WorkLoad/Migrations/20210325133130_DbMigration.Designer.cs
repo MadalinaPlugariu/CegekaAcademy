@@ -10,7 +10,7 @@ using WorkLoad.Data;
 namespace WorkLoad.Migrations
 {
     [DbContext(typeof(WorkLoadDbContext))]
-    [Migration("20210322115906_DbMigration")]
+    [Migration("20210325133130_DbMigration")]
     partial class DbMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,93 @@ namespace WorkLoad.Migrations
                     b.ToTable("FreelancerProject");
                 });
 
+            modelBuilder.Entity("WorkLoad.Entities.AddressFreelancer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AddressLocation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("County")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("FreelancerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Zipcode")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FreelancerId")
+                        .IsUnique();
+
+                    b.ToTable("AddressFreelancer");
+                });
+
+            modelBuilder.Entity("WorkLoad.Entities.AddressProject", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AddressLocation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("County")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("State")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Zipcode")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId")
+                        .IsUnique();
+
+                    b.HasIndex("ProjectId")
+                        .IsUnique();
+
+                    b.ToTable("AddressProject");
+                });
+
+            modelBuilder.Entity("WorkLoad.Entities.Customer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CustomerInfo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Customer");
+                });
+
             modelBuilder.Entity("WorkLoad.Entities.Freelancer", b =>
                 {
                     b.Property<int>("Id")
@@ -43,31 +130,12 @@ namespace WorkLoad.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("County")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("FreelancerInfo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
-
-                    b.Property<string>("State")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<float>("Zipcode")
-                        .HasColumnType("real");
 
                     b.HasKey("Id");
 
@@ -81,38 +149,19 @@ namespace WorkLoad.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("County")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Customer")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("EstimationDays")
-                        .HasColumnType("float");
+                    b.Property<int>("EstimationDays")
+                        .HasColumnType("int");
 
                     b.Property<string>("ProjectInfo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("State")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Zipcode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("Project");
                 });
@@ -130,13 +179,13 @@ namespace WorkLoad.Migrations
                     b.Property<double>("Hours")
                         .HasColumnType("float");
 
+                    b.Property<int?>("IdFreelancer")
+                        .HasColumnType("int");
+
                     b.Property<int?>("IdProject")
                         .HasColumnType("int");
 
                     b.Property<int?>("ProjectId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("WorkdayType")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Workdays")
@@ -166,9 +215,50 @@ namespace WorkLoad.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("WorkLoad.Entities.AddressFreelancer", b =>
+                {
+                    b.HasOne("WorkLoad.Entities.Freelancer", "Freelancer")
+                        .WithOne("AddressFreelancer")
+                        .HasForeignKey("WorkLoad.Entities.AddressFreelancer", "FreelancerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Freelancer");
+                });
+
+            modelBuilder.Entity("WorkLoad.Entities.AddressProject", b =>
+                {
+                    b.HasOne("WorkLoad.Entities.Customer", "Customer")
+                        .WithOne("AddressPorject")
+                        .HasForeignKey("WorkLoad.Entities.AddressProject", "CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WorkLoad.Entities.Project", "Project")
+                        .WithOne("AddressProject")
+                        .HasForeignKey("WorkLoad.Entities.AddressProject", "ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Project");
+                });
+
+            modelBuilder.Entity("WorkLoad.Entities.Project", b =>
+                {
+                    b.HasOne("WorkLoad.Entities.Customer", "Customer")
+                        .WithMany("Project")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
             modelBuilder.Entity("WorkLoad.Entities.Workday", b =>
                 {
-                    b.HasOne("WorkLoad.Entities.Freelancer", null)
+                    b.HasOne("WorkLoad.Entities.Freelancer", "Freelancer")
                         .WithMany("Workdays")
                         .HasForeignKey("FreelancerId");
 
@@ -176,16 +266,29 @@ namespace WorkLoad.Migrations
                         .WithMany("Workdays")
                         .HasForeignKey("ProjectId");
 
+                    b.Navigation("Freelancer");
+
+                    b.Navigation("Project");
+                });
+
+            modelBuilder.Entity("WorkLoad.Entities.Customer", b =>
+                {
+                    b.Navigation("AddressPorject");
+
                     b.Navigation("Project");
                 });
 
             modelBuilder.Entity("WorkLoad.Entities.Freelancer", b =>
                 {
+                    b.Navigation("AddressFreelancer");
+
                     b.Navigation("Workdays");
                 });
 
             modelBuilder.Entity("WorkLoad.Entities.Project", b =>
                 {
+                    b.Navigation("AddressProject");
+
                     b.Navigation("Workdays");
                 });
 #pragma warning restore 612, 618

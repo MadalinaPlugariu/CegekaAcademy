@@ -61,3 +61,11 @@ D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\runtimes\w
 D:\cegeka\course4\homework4\WorkLoad\WorkLoad\obj\Debug\netcoreapp3.1\WorkLoad.csproj.CopyComplete
 D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\cegeka\course4\homework4\WorkLoad\WorkLoad\obj\Debug\netcoreapp3.1\WorkLoad.MvcApplicationPartsAssemblyInfo.cs
+D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+D:\cegeka\course4\homework4\WorkLoad\WorkLoad\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

@@ -14,11 +14,6 @@ namespace WorkLoad.Configurations
         {
             builder.Property(f => f.FreelancerInfo).IsRequired();
             builder.Property(p => p.Price).IsRequired();
-            builder.Property(a => a.Address).IsRequired();
-            builder.Property(z => z.Zipcode).IsRequired();
-            builder.Property(c => c.City).IsRequired();
-            builder.Property(s => s.State).IsRequired();
-            builder.Property(o => o.County).IsRequired();
         }
     }
 }

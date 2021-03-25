@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj": {}
+    "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj": {
+    "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj",
+        "projectUniqueName": "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj",
         "projectName": "WorkLoad",
-        "projectPath": "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj",
+        "projectPath": "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\WorkLoad.csproj",
         "packagesPath": "C:\\Users\\Madalina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Madalina\\Documents\\Cegeka\\CegekaAcademy\\Course4\\homework4\\WorkLoad\\WorkLoad\\obj\\",
+        "outputPath": "D:\\cegeka\\course4\\homework4\\WorkLoad\\WorkLoad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Madalina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.4, )"
@@ -59,6 +63,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.1, )"
             }
           },
           "imports": [
