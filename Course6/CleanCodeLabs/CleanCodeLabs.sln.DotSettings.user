@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d409290b_002D2b8a_002D4c76_002Da968_002Dc97d02f9ec87/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Codelab01Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::7C2BC23B-1840-40B7-B2CF-570E4225D970::.NETCoreApp,Version=v3.1::CleanCodeLabs.Tests.Codelab01Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::7C2BC23B-1840-40B7-B2CF-570E4225D970::.NETCoreApp,Version=v3.1::CleanCodeLabs.Tests.Codelab02Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::7C2BC23B-1840-40B7-B2CF-570E4225D970::.NETCoreApp,Version=v3.1::CleanCodeLabs.Tests.Codelab03Tests.TestMethod1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::7C2BC23B-1840-40B7-B2CF-570E4225D970::.NETCoreApp,Version=v3.1::CleanCodeLabs.Tests.Codelab04Tests.TestFactory&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::7C2BC23B-1840-40B7-B2CF-570E4225D970::.NETCoreApp,Version=v3.1::CleanCodeLabs.Tests.Codelab04Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
