@@ -1,0 +1,13 @@
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\bin\Debug\netcoreapp3.1\RentalCars.exe
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\bin\Debug\netcoreapp3.1\RentalCars.deps.json
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\bin\Debug\netcoreapp3.1\RentalCars.runtimeconfig.json
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\bin\Debug\netcoreapp3.1\RentalCars.runtimeconfig.dev.json
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\bin\Debug\netcoreapp3.1\RentalCars.dll
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\bin\Debug\netcoreapp3.1\RentalCars.pdb
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\obj\Debug\netcoreapp3.1\RentalCars.csprojAssemblyReference.cache
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\obj\Debug\netcoreapp3.1\RentalCars.AssemblyInfoInputs.cache
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\obj\Debug\netcoreapp3.1\RentalCars.AssemblyInfo.cs
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\obj\Debug\netcoreapp3.1\RentalCars.csproj.CoreCompileInputs.cache
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\obj\Debug\netcoreapp3.1\RentalCars.dll
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\obj\Debug\netcoreapp3.1\RentalCars.pdb
+F:\Cegeka\CegekaAcademy_local\Course7\local\RentalCars\RentalCars\obj\Debug\netcoreapp3.1\RentalCars.genruntimeconfig.cache
