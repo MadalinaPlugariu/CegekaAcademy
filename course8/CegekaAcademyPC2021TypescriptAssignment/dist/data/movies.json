@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Before Sunset",
+        "locuri_disponibile": 10,
+        "locuri_ocupate": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+        "title": "Master and Commander: The Far Side of the World",
+        "locuri_disponibile": 10,
+        "locuri_ocupate": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+        "title": "12 Angry Men",
+        "locuri_disponibile": 10,
+        "locuri_ocupate": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+        "title": "School Ties",
+        "locuri_disponibile": 10,
+        "locuri_ocupate": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }
+]
